@@ -11,8 +11,8 @@ module.exports = {
     },
 
     resolve: {
-        extensions: ['', '.js', '.ts']
-    },
+    extensions: ['', '.js', '.ts']
+},
 
     module: {
         loaders: [
@@ -29,14 +29,9 @@ module.exports = {
                 loader: 'file?name=assets/[name].[hash].[ext]'
             },
             {
-                test: /\.css$/,
-                exclude: helpers.root('src', 'app'),
-                loader: 'css-to-string-loader!css-loader'
-            },
-            {
-                test: /\.css$/,
-                include: helpers.root('src', 'app'),
-                loader: 'raw'
+                test: /\.scss$/,
+                exclude: /node_modules/,
+                loader: 'raw-loader!sass-loader'
             }
         ]
     },
