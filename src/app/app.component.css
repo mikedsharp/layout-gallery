@@ -1,2 +1,9 @@
 * {
   font-family: "Comic Sans MS"; }
+
+h1 {
+  transition: color  2s;
+  color: red; }
+
+h1:hover {
+  color: green; }

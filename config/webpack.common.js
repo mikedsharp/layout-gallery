@@ -2,6 +2,8 @@ var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var helpers = require('./helpers');
+var autoprefixer = require('autoprefixer');
+var precss       = require('precss');
 
 module.exports = {
     entry: {
@@ -31,11 +33,13 @@ module.exports = {
             {
                 test: /\.scss$/,
                 exclude: /node_modules/,
-                loader: 'raw-loader!sass-loader'
+                loaders: [ 'to-string', "css-loader", "postcss-loader"]
             }
         ]
     },
-
+    postcss: function () {
+        return [precss, autoprefixer({ browsers: ['last 2 versions', 'ie >= 9'] })];
+    },
     plugins: [
         new webpack.optimize.CommonsChunkPlugin({
             name: ['app', 'vendor', 'polyfills']

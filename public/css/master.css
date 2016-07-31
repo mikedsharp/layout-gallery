@@ -1,5 +1,3 @@
 body, html {
-  background-color: hotpink; }
-
-* {
-  color: green; }
+  background: linear-gradient(red, yellow);
+  /* Standard syntax */ }
