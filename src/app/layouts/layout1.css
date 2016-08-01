@@ -1,0 +1,56 @@
+@import 'https://fonts.googleapis.com/css?family=Pattaya';
+@import 'https://fonts.googleapis.com/css?family=Roboto';
+@import 'https://fonts.googleapis.com/css?family=Oxygen';
+@import 'https://fonts.googleapis.com/css?family=Droid+Serif';
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #333333;
+  align-items: center; }
+  .header .masthead {
+    color: white;
+    font-family: 'Pattaya', sans-serif;
+    padding: 0 10px;
+    order: 0;
+    font-size: 24px;
+    display: flex;
+    flex: 0 1 auto;
+    align-self: auto;
+    text-align: center;
+    margin: 0;
+    padding: 0 10px; }
+  .header .nav {
+    display: flex;
+    list-style-type: none;
+    order: 1;
+    font-family: 'Roboto', sans-serif;
+    color: white; }
+    .header .nav li {
+      margin: 0 10px;
+      cursor: pointer; }
+
+.content {
+  background-color: #66b3ff;
+  color: #222;
+  padding: 10px;
+  flex-direction: column;
+  display: flex;
+  flex: 1;
+  overflow: auto;
+  font-family: 'Droid Serif', serif; }
+
+.footer {
+  background-color: #333333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px; }
+  .footer span {
+    color: white; }
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%; }

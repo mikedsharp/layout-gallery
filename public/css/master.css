@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box; }
+
 body, html {
-  background: linear-gradient(red, yellow);
-  /* Standard syntax */ }
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%; }

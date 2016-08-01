@@ -1,0 +1,77 @@
+@import 'https://fonts.googleapis.com/css?family=Pattaya';
+@import 'https://fonts.googleapis.com/css?family=Roboto';
+@import 'https://fonts.googleapis.com/css?family=Oxygen';
+@import 'https://fonts.googleapis.com/css?family=Droid+Serif';
+
+.header{
+
+  $header-background-color: #333;
+
+  $masthead-color: #fff;
+  $nav-color: #fff;
+
+  display: flex;
+  justify-content: space-between;
+  background-color: $header-background-color;
+  align-items: center;
+
+  .masthead{
+    color: $masthead-color;
+    font-family: 'Pattaya', sans-serif;
+    padding: 0 10px;
+    order: 0;
+    font-size: 24px;
+    display: flex;
+    flex: 0 1 auto;
+    align-self: auto;
+    text-align: center;
+    margin: 0;
+    padding: 0 10px;
+
+  }
+
+  .nav{
+    display: flex;
+    list-style-type: none;
+    order: 1;
+    font-family: 'Roboto', sans-serif;
+    color: $nav-color;
+    li{
+      margin: 0 10px;
+      cursor: pointer;
+    }
+  }
+
+}
+.content{
+  background-color: #66b3ff;
+  color: #222;
+  padding: 10px;
+  flex-direction: column;
+  display: flex;
+  flex: 1;
+  overflow: auto;
+  font-family: 'Droid Serif', serif;
+}
+
+.footer{
+  $footer-background-color: #333;
+  $footer-watermark-color: #fff;
+  background-color: $footer-background-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+
+  span {
+    color:$footer-watermark-color;
+  }
+}
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
