@@ -1,7 +1,6 @@
 @import 'https://fonts.googleapis.com/css?family=Pattaya';
 @import 'https://fonts.googleapis.com/css?family=Roboto';
-@import 'https://fonts.googleapis.com/css?family=Droid+Serif';
-
+@import 'https://fonts.googleapis.com/css?family=Raleway:400,500,700';
 .header{
 
   $header-background-color: #333;
@@ -33,7 +32,8 @@
     display: flex;
     list-style-type: none;
     order: 1;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
     color: $nav-color;
     li{
       margin: 0 10px;
@@ -45,12 +45,24 @@
 .content{
   background-color: #66b3ff;
   color: #222;
-  padding: 10px;
+  padding: 0 10px;
   flex-direction: column;
   display: flex;
   flex: 1;
   overflow: auto;
-  font-family: 'Droid Serif', serif;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+
+  h3,h4{
+    margin:0;
+    margin-top: 20px;
+  }
+
+  .mainheading{
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-weight: 700;
+  }
 }
 
 .footer{
@@ -61,7 +73,8 @@
   align-items: center;
   justify-content: center;
   padding: 10px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
   font-size: 12px;
 
   span {
